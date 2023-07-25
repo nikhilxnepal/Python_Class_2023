@@ -1,7 +1,11 @@
-#Write a program to read 2 names and then change places in memory and print them again.
+#Write a program that allows the user to test if it is possible that one of 
+#the three numbers he reads is the sum of the other two numbers.
 
-first_name = input("Enter the first name: ")
-second_name = input("Enter the second name: ")
+first_number = int(input("Number 1: "))
+second_number = int(input("Number 2: "))
+third_number = int(input("Number 3: "))
 
-print("Before changing: ", first_name + " " + second_name)
-print("After changing: ", second_name + " " + first_name)
+if first_number == second_number + third_number:
+    print("This works")
+else:
+    print("This won't work")
